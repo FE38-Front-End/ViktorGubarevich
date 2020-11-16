@@ -30,9 +30,9 @@ if (home[0] > 25) {
 3. на каком этаже находится введенная квартира.
 */
 
-const sumFlatsEntrance = floor * stairCaseFlat; //1.
-const numEntrance = Math.ceil(apartment / sumFlatsEntrance); //2.
-const numFlatsEntrance = Math.ceil((apartment % sumFlatsEntrance) / stairCaseFlat); //3.
+const sumFlatsEntrance = floor * stairCaseFlat; //1
+const numEntrance = Math.ceil(apartment / sumFlatsEntrance); //2
+const numFlatsEntrance = Math.ceil((apartment % sumFlatsEntrance) / stairCaseFlat); //3
 
 
 alert(`Apartment number ${apartment} is located in the ${numEntrance}th entrance on the ${numFlatsEntrance}th floor.`);
