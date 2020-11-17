@@ -5,20 +5,18 @@ const entrance = Number(prompt('Please, enter the number of entrance.', ''));
 const stairCaseFlat = Number(prompt('Please, enter the number of flat per floor.', ''));
 const apartment = Number(prompt('Please, enter apartment number.', ''));
 
-const home = [floor, entrance, stairCaseFlat, apartment];
-
 // Вычисляем количество квартир в доме пользователя.
 const sumFlats = floor * entrance * stairCaseFlat;
 
 // Проверяем верно ли введены данные, заданные по условию задачи.
 
-if (home[0] > 25) {
+if (floor > 25) {
     alert('Mistake. Enter the number of floors from 1 to 25.');
-} else if (home[1] > 10) {
+} else if (entrance > 10) {
     alert('Mistake. Enter the number of entrance from 1 to 10.');
-} else if (home[2] > 20) {
+} else if (stairCaseFlat > 20) {
     alert('Mistake. Enter the number of flat per floor from 1 to 20.');
-} else if (home[3] > 5000) {
+} else if (apartment > 5000) {
     alert('Mistake. Enter apartment number from 1 to 5000.');
 } else {
     alert(`Amount of apartments in your house: ${sumFlats}.`);
