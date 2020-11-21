@@ -1,10 +1,9 @@
 function sequence(start = 0, step = 1) {
-    let callStart = start;
+    let callStart = start - step;
 
     return function () {
-        let returnNumber = callStart;
         callStart += step;
-        return returnNumber;
+        return callStart;
     };
 }
 
