@@ -2,18 +2,18 @@ let array = [];
 
 while (array.length < 7) {
 
-    let numbers = Math.floor(Math.random() * 10);
+    let number = Math.floor(Math.random() * 10);
     let x = false;
 
     for (let i = 0; i < array.length; i++) {
-        if (array[i] === numbers) {
+        if (array[i] === number) {
             x = true;
             break;
         }
     }
 
     if (!x) {
-        array[array.length] = numbers;
+        array[array.length] = number;
     }
 }
 
