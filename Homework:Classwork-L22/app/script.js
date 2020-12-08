@@ -14,7 +14,6 @@ addList.addEventListener('click', (event) => {
         document.body.appendChild(ul);
         ul.textContent = 'Список элементов:'
     }
-
 });
 
 addElementList.addEventListener('click', (event) => {
@@ -27,8 +26,6 @@ addElementList.addEventListener('click', (event) => {
         document.body.appendChild(li);
         li.innerHTML = new Date().toLocaleString();
     }
-
-
 });
 
 removeLastElement.addEventListener('click', (event) => {
@@ -37,9 +34,7 @@ removeLastElement.addEventListener('click', (event) => {
 
     if (remove.length === 0) {
         alert('Удалить элемент невозможно т.к. его не существует.');
-        return;
+    } else {
+        remove[remove.length - 1].remove();
     }
-
-    const lastElement = remove[remove.length - 1];
-    lastElement.parentElement.removeChild(lastElement);
 });
