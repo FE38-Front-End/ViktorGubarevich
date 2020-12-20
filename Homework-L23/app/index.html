@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Homework Lesson 23</title>
 </head>
@@ -11,15 +11,57 @@
 <body>
     <h1>Lesson 23</h1>
     <p>
-        Задача. <br>
-        1. Создать интерфейс для возможности изменять положение окружности в пределах периметра квадрата. <br>
-        2. Предусмотреть возможность ввода параметров квадрата и окружности. <br>
-        3. В случае когда окружность достигла одной из границ квадрата заблокировать клавишу для этого направления. <br>
-        4. Шаг движения окружности должен быть выбран пользователем. <br>
-        5. Предусмотреть валидацию для ввода данных, например нельзя создать окружность большего диаметра чем сторона
-        квадрата. <br>
+        Задача. <br />
+        1. Создать интерфейс для возможности изменять положение окружности в
+        пределах периметра квадрата. <br />
+        2. Предусмотреть возможность ввода параметров квадрата и окружности.
+        <br />
+        3. В случае когда окружность достигла одной из границ квадрата
+        заблокировать клавишу для этого направления. <br />
+        4. Шаг движения окружности должен быть выбран пользователем. <br />
+        5. Предусмотреть валидацию для ввода данных, например нельзя создать
+        окружность большего диаметра чем сторона квадрата. <br />
         По умолчанию окружность распологать в центре квадрата.
     </p>
+
+
+    <div class="date">
+        <div class="date-title">Параметры</div>
+        <div class="date-square">
+            <p class="date-text">Сторона квадрата:</p>
+            <input class="date-input date-square-input" type="text" placeholder="введите значение" />
+            <button class="date-button date-button-square">Применить</button>
+        </div>
+        <div class="date-circle">
+            <p class="date-text">Диаметр окружности:</p>
+            <input class="date-input date-circle-input" type="text" placeholder="введите значение" />
+            <button class="date-button date-button-circle">Применить</button>
+        </div>
+        <div class="date-step">
+            <p class="date-text">Шаг движения окружности:</p>
+            <input class="date-input date-step-input" type="text" placeholder="введите значение" />
+            <button class="date-button date-button-step">Применить</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="navigation">
+            <button class="navigation-up">
+                <div class="arrow-up"></div>
+            </button>
+            <button class="navigation-left">
+                <div class="arrow-left"></div>
+            </button>
+            <button class="navigation-down">
+                <div class="arrow-down"></div>
+            </button>
+            <button class="navigation-right">
+                <div class="arrow-right"></div>
+            </button>
+        </div>
+        <div class="square">
+            <div class="circle"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
