@@ -71,18 +71,24 @@ function operation(op) {
     display.value = MemoryCurrentNumber;
   } else {
     MemoryNewNumber = true;
-    if (MemoryNextOperation === "+") {
-      MemoryCurrentNumber += +memoryLocalOperation;
-    } else if (MemoryNextOperation === "-") {
-      MemoryCurrentNumber -= +memoryLocalOperation;
-    } else if (MemoryNextOperation === "*") {
-      MemoryCurrentNumber *= +memoryLocalOperation;
-    } else if (MemoryNextOperation === "/") {
-      MemoryCurrentNumber /= +memoryLocalOperation;
-    } else {
-      MemoryCurrentNumber = +memoryLocalOperation;
+
+    switch (MemoryNextOperation) {
+      case "+":
+        MemoryCurrentNumber += +memoryLocalOperation;
+        break;
+      case "-":
+        MemoryCurrentNumber -= +memoryLocalOperation;
+        break;
+      case "*":
+        MemoryCurrentNumber *= +memoryLocalOperation;
+        break;
+      case "/":
+        MemoryCurrentNumber /= +memoryLocalOperation;
+        break;
+      default:
+        MemoryCurrentNumber = +memoryLocalOperation;
     }
-    display.value = MemoryCurrentNumber.toFixed(2);
+    display.value = MemoryCurrentNumber.toFixed(1);
     MemoryNextOperation = op;
   }
 }
