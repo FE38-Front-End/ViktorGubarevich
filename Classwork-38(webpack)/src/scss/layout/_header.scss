@@ -1,0 +1,88 @@
+.l-header {
+    display: flex;
+    align-items: center;
+    padding: 25px 61px 55px 68px;
+    
+    @include screen-max($md) {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 18px 0px 0px 25px;
+    }
+    
+    &__logo {
+        margin-right: 43px;
+        margin-top: 7px;
+        margin-bottom: 13px;
+
+        @include screen-max($md) {
+
+            a img {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__profile {
+        display: flex;
+        margin-left: auto;
+
+        &-link {
+            outline: none;
+
+            &:focus {
+                    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                }
+
+            @include screen-max($md) {
+                    display: none;
+            }
+        }
+    }
+    
+    &__profile-favourites {
+        display: flex;
+        align-items: center;
+        margin-left: 33px;
+        margin-right: 28px;
+
+        @include screen-max($md) {
+            display: none;
+        }
+    }
+
+    /*PAGE 2*/
+
+    &-second {
+        display: flex;
+        align-items: center;
+        padding: 15px 44px 15px 46px;
+        background: #FFFFFF;
+
+        @include screen-max($md) {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 18px 0px 48px 25px;
+        }
+
+        &__logo {
+            margin: 7px 43px 13px 0px;
+
+            @include screen-max($md) {
+
+                a img {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+            
+        }
+    }
+
+}
+
+

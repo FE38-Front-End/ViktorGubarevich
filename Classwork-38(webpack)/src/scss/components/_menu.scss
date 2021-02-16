@@ -1,0 +1,42 @@
+.c-menu {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include screen-max($hd) {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+        margin-right: 23px;                
+    
+        button {
+            background: none;
+            border: none;
+    
+            &:hover {                                
+                    svg {  
+                        path {
+                            fill: rgba(7, 74, 219, 0.726);
+                            transition-property: all;
+                            transition-duration: 0.5s;
+                            transition-delay: 0s;
+                            transition-timing-function: linear;
+                    }
+                }
+            }
+    
+            &:focus {
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        }     
+    }
+
+    @include screen-max($md) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+

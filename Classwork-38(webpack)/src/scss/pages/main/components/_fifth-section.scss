@@ -1,0 +1,153 @@
+.p-m-fifth-section {
+    background: #FFF8F8;
+    padding-bottom: 64px;
+
+    @include screen-max($lg) {
+        padding-bottom: 24px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 44px 0px 60px 0px;
+
+        @include screen-max($lg) {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 44px 0px 60px 0px; 
+        }
+    }
+
+    &-blog {
+        display: flex;
+        justify-content: space-between;
+
+        @include screen-max($hd) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @include screen-max($lg) {
+            display: flex;
+            flex-direction: column;
+            padding: 0 51px;
+        }
+
+        &-item {
+            flex-direction: column;
+            width: 331px;
+            height: 514px;
+            background: #FFFFFF;
+            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+            border-radius: 2px;
+
+            &:nth-child(3) {
+                @include screen-max($hd) {
+                    display: none;
+                }
+
+                @include screen-max($lg) {
+                    display: block;
+                }
+            }
+
+            @include screen-max($lg) {
+                margin-bottom: 40px;
+                width: 100%;
+                max-width: 1000px;
+                height: 100%;
+            }
+
+            &__img {
+                width: 100%;
+                height: auto;
+                max-height: 202px;
+                object-fit: cover;
+            }
+
+            &__block {
+                margin: 29px 0px 26px 28px;
+
+                &-date {
+                    margin-bottom: 12px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.1px;
+                    color: #BDBDBD;
+
+                    @include screen-max($lg) {
+                        width: 100%;
+                        max-width: 1000px;
+                    }
+                    
+                }
+    
+                &-title {
+                    margin-bottom: 13px;
+                    width: 290px;
+
+                    @include screen-max($lg) {
+                        width: 100%;
+                        max-width: 1000px;
+                    }
+                }
+    
+                &-text {
+                    margin-bottom: 28px;
+                    width: 290px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.2px;
+                    color: #858585;
+
+                    @include screen-max($lg) {
+                        width: 100%;
+                        max-width: 1000px;
+                    }
+                }
+
+                &-link {
+
+                    @include screen-max($lg) {
+                        width: 100%;
+                        max-width: 1000px;
+                    }
+    
+                    &_type {
+                        margin-right: 16px;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+                        color: #8EC2F2;
+                        outline: none;
+    
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+    
+                        &:hover {
+                            text-decoration: underline;
+                            color: #8EC2F2;
+                            transition-property: all;
+                            transition-duration: 0.5s;
+                            transition-delay: 0s;
+                            transition-timing-function: linear;
+                        }
+
+                        &:focus {
+                            box-shadow: 0 0 10px rgba(15, 130, 238, 1);
+                        }
+                    }
+                }            
+            }            
+        }        
+    }
+}

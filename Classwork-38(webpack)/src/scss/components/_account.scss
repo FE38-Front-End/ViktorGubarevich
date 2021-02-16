@@ -1,0 +1,66 @@
+.c-account {
+    display: flex;
+    align-items: center;
+    width: 170px;
+
+    &__icon {
+        max-width: 168px;
+        height: 56px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        
+        a {
+            display: block;
+            text-align: center;
+            height: 100%;
+        }
+
+        &:hover {
+            background: rgba(7, 74, 219, 0.726);
+            border-radius: 50%;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+
+            svg {        
+                flex-shrink: 0;
+
+                    path {
+                        fill: rgba(7, 74, 219, 0.726);
+                        transition-property: all;
+                        transition-duration: 0.5s;
+                        transition-delay: 0s;
+                        transition-timing-function: linear;                            
+                    }
+            }
+        }
+
+    }
+
+    &__title {
+        margin-left: 12px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+
+        &:hover {
+            text-decoration: underline;
+            color: blue;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+        }
+    }
+
+    &-second {
+        &__title {
+            color: #252B42;
+        }
+    }
+}

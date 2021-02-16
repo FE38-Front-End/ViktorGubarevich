@@ -1,0 +1,119 @@
+.p-m-fourth-section {
+    padding-bottom: 80px;
+
+    @include screen-max($lg) {
+        padding-bottom: 33px;
+    }
+    
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding: 90px 0px 60px 0px;
+
+        @include screen-max($lg) {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 43px 0px 32px 0px;
+        }
+    }
+
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+
+        @include screen-max($hd) {
+            grid-template-columns: repeat(3, 1fr);
+            padding-left: 57px;
+        }
+
+        @include screen-max($lg) {
+            grid-gap: 40px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 57px;
+            margin-bottom: 0px;
+        }
+
+        .c-products__small {
+
+            @include screen-max($lg) {
+                width: 100%;
+                max-width: 1000px;
+                margin: 0 auto;                
+            }
+
+            img {
+                @include screen-max($lg) {
+                    width: 100%;
+                    height: auto;
+                    max-height: 180px;
+                    object-fit: cover;
+                }
+            }
+
+            &:nth-child(1) {
+                @include screen-max($lg) {
+                    display: none;
+                }
+            }
+
+            &:nth-child(2) {
+                @include screen-max($lg) {
+                    display: none;
+                }
+            }
+
+            &:nth-child(3) {
+                @include screen-max($lg) {
+                    display: none;
+                }
+            }
+
+            &:nth-child(4) {
+                @include screen-max($hd) {
+                    display: none;
+                }
+
+                @include screen-max($lg) {
+                    display: none;
+                }
+            }
+
+            &:nth-child(8) {
+                @include screen-max($hd) {
+                    display: none;
+                }
+
+                @include screen-max($lg) {
+                    display: block;
+                }
+            }
+
+            &-image {
+                @include screen-max($lg) {
+                    width: 320px;
+                    object-fit: cover;
+                }
+            }
+
+            .c-tubs {
+                @include screen-max($lg) {
+                    display: none;
+                }
+            }
+        }
+        
+        &-price {
+            margin-bottom: 10px;
+
+            @include screen-max($lg) {
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+
+}
