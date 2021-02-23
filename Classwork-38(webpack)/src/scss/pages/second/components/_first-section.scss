@@ -1,0 +1,20 @@
+.p-s-first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0px;
+
+    &-background {
+        background: url("../images/p-s-first-section/background.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title {
+        margin: 0px;
+    }
+
+    @include screen-max($hd) {
+        padding-bottom: 0px;
+    }
+}

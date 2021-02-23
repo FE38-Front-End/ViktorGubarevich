@@ -4,7 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "file-loader": "^6.2.0",
     "lodash": "^4.17.20",
+    "url-loader": "^4.1.1",
     "webpack": "^5.21.2",
     "webpack-cli": "^4.5.0"
   },
@@ -17,6 +19,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
+    "build": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --mode=development"
   },

@@ -1,0 +1,23 @@
+.p-background-header-first-section {
+    background: url("../images/p-m-first-section/background.jpg");
+    background-size: cover;
+    
+    @include screen-max($hd) {
+        background: url("../images/p-m-first-section/background.jpeg");
+        background-size: cover;
+    }
+}
+
+.p-wrapper {
+    max-width: 1130px;
+    margin: 0 auto;
+
+    &-second {
+        width: 1160px;
+        max-width: 1160px;
+
+        @include screen-max($hd) {
+            max-width: 100%;
+        }
+    }
+}

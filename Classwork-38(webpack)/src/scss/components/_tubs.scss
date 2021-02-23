@@ -1,0 +1,38 @@
+.c-tubs {
+    display: flex;
+        
+        &__item {
+            @include tubs-item;
+            font-weight: bold;
+            font-size: 13px;
+            width: 34px;
+            height: 29px;
+            border: 1px solid #E4E4E4;
+            background-color: white;
+            margin-right: 11px;
+            outline: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: white;
+                background-color: #2091F9;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-delay: 0s;
+                transition-timing-function: linear;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            &:focus {
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        }
+
+        @include screen-max($lg) {
+            display: flex;
+            justify-content: center;
+        }
+}

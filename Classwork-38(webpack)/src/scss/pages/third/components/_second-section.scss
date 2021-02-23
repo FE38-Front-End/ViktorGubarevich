@@ -1,0 +1,122 @@
+.p-th-second-section {
+    display: flex;
+
+        &-block {
+            display: flex; 
+            flex-direction: column;
+            padding: 48px 0px 67px 0px;
+            width: 1160px;
+
+            @include screen-max($hd) {
+                display: flex;
+                width: 100%;
+                padding: 60px 47px 50px 47px;
+            }
+
+            @include screen-max($lg) {
+                padding: 60px 47px 50px 47px;
+            }
+
+            &_title {
+                @include area-title;
+                margin-bottom: 43px;
+
+                @include screen-max($hd) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @include screen-max($lg) {
+                    margin-bottom: 39px;
+                }
+            }
+
+            &_slaider {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+
+                @include screen-max($hd) {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 27px;
+                    padding-left: 5px;                       
+                }
+
+                @include screen-max($lg) {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 27px;
+                    padding-left: 5px;                       
+                }
+
+                &-products {
+
+                    @include screen-max($lg) {
+                        display: flex;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    &-image {
+                        width: 210px;
+
+                        @include screen-max($hd) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+
+                        @include screen-max($lg) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .c-favourites {
+                        left: calc(100% - 65px); 
+                    }
+
+                    @include screen-max($hd) {
+
+                        &:nth-child(4) {
+                            display: none;
+                        }
+
+                        &:nth-child(5) {
+                            display: none;
+                        }
+                    }
+
+                    @include screen-max($lg) {
+
+                        &:nth-child(3) {
+                            display: none;
+                        }
+
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                    }
+                    
+                }
+
+                &-back {
+                    left: -25px;
+                    top: 92px;
+                }
+
+                &-next {
+                    right: 2px;
+                    top: 92px;
+                }
+            }
+        }
+
+}

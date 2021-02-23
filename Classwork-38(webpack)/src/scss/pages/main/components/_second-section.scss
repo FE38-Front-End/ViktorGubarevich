@@ -1,0 +1,127 @@
+.p-m-second-section {
+    display: flex;
+    padding: 49px 0;
+
+    @include screen-max($hd) {
+        display: flex;
+        justify-content: space-around;
+        }
+
+    @include screen-max($lg) {
+        flex-direction: column;
+        padding: 20px 32px;
+        }
+
+    &__products {
+        flex-direction: column;
+
+        @include screen-max($hd) {
+            display: flex;
+            }
+
+        &_block {
+            display: flex;
+            position: relative;
+            width: 370px;
+            height: 220px; 
+            margin-bottom: 29px;
+            outline: none;
+
+            @include screen-max($lg) {
+                display: flex;
+                width: 100%;
+                max-width: 1000px;
+            }
+
+            img {
+                @include screen-max($lg) {
+                    width: 100%;
+                    height: auto;
+                    max-height: 220px;
+                    object-fit: cover;
+                }
+            }
+
+            &:focus {
+                box-shadow: 0 0 10px rgba(15, 130, 238, 1);
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            &-link {
+                @include link ();
+                position: absolute;
+                left: calc(50% - 95px/2 - 0.5px);
+                top: calc(50% - 54px/2);
+                
+                &:hover {
+                    background: rgba(51, 51, 51, 0.58);
+                    transition-property: all;
+                    transition-duration: 0.5s;
+                    transition-delay: 0s;
+                    transition-timing-function: linear;
+                }
+            }
+
+            &-dresses {
+                display: flex;
+                position: relative;
+                width: 310px;
+                height: 468px;
+                margin: 0px 40px;
+                outline: none;
+
+                @include screen-max($hd) {
+                display: none;
+                }
+
+                @include screen-max($lg) {
+                    display: flex;
+                    padding: 10px 0;
+                    width: 100%;
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+
+                img {
+                    @include screen-max($lg) {
+                        width: 100%;
+                        height: auto;
+                        max-height: 468px;
+                        object-fit: cover;
+                    }
+                }
+
+                &:focus {
+                    box-shadow: 0 0 10px rgba(15, 130, 238, 1);
+                }
+
+                &_link {
+                    @include link ();
+                    position: absolute;
+                    left: calc(50% - 138px/2 - 0.5px);
+                    top: calc(50% - 54px/2);
+
+                    &:hover {
+                        background: rgba(51, 51, 51, 0.58);
+                        transition-property: all;
+                        transition-duration: 0.5s;
+                        transition-delay: 0s;
+                        transition-timing-function: linear;
+                    }
+                
+                    &:focus {
+                        background: rgba(51, 51, 51, 0.58);
+                        outline: none;
+                        border: 1px solid rgba($color: #038eeb, $alpha: 0.5);
+                    }
+                }
+            }
+
+        }
+        
+    }
+        
+}

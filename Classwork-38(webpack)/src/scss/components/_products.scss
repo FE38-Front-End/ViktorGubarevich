@@ -1,0 +1,89 @@
+.c-products {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 242px;
+    
+        &__img {
+            width: 242px;            
+            height: 414px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .c-favourites {
+            position: absolute;
+            left: calc(100% - 45px);
+            top: 9px;
+            background: rgba(232, 232, 232, 0.46);            
+        }
+
+        &__title {
+            padding: 14px 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: #252B42;
+
+            &-text {
+                opacity: .3;
+            }
+        }
+
+        &__price {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.2px;
+            color: #252B42;
+        }
+
+        &__color {
+            display: flex;
+            padding: 14px 0;
+
+            @include screen-max($lg) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &__small {
+
+            &-image {
+                width: 240px;            
+                height: 180px;
+                object-fit: cover;
+            }
+
+            &-title {
+                padding: 10px 0;
+                width: 169px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: #252B42;
+    
+                &_text {
+                    opacity: .3;
+                }
+    
+            }
+
+            &-price {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                color: #252B42;
+            }
+
+        }
+
+}
