@@ -1,0 +1,98 @@
+.l-navigation {
+    display: flex;
+
+    @include screen-max($hd) {
+        display: none;
+    }
+
+    &__mobile {
+
+        @include screen-max($hd) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        margin-right: 41px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        outline: none;
+    
+        @include screen-max($hd) {
+            margin-right: 0px;
+            margin-bottom: 16px;
+    
+            &:last-child {
+                margin-bottom: 63px;
+            }
+    
+        }
+    
+        &:last-child {
+            margin-right: 0px;
+        }
+    
+        &:hover {
+            text-decoration: underline;
+            color: blue;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+        }
+    
+        &:focus {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        &-active {
+            color: #2091F9;
+        }
+    
+    }
+
+    &-second {
+
+        &__item {
+            margin-right: 41px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #737373;
+            outline: none;
+
+            &-active {
+                color: #252B42;
+            }
+        
+            &:last-child {
+                margin-right: 0px;
+            }
+        
+            &:hover {
+                text-decoration: underline;
+                color: blue;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-delay: 0s;
+                transition-timing-function: linear;
+            }
+        
+            &:focus {
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+        }
+    }
+}
+
+
+

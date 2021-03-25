@@ -1,0 +1,63 @@
+.l-footer {
+    display: flex;
+    align-items: center;
+    background: #252B42;
+    padding: 35px 58px 35px 111px;
+
+    @include screen-max($hd) {
+        display: flex;
+        flex-direction: column;
+        padding: 46px 0px 69px 0px;
+    }
+    
+    &__logo {
+        margin-right: 55.5px;
+        margin-bottom: 20px;
+
+        @include screen-max($hd) {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0px 0px 60px 0px;
+        }
+
+    }
+
+    &__networks {
+        display: flex;
+        margin-left: auto;
+
+        @include screen-max($hd) {
+            display: flex;
+            margin: 0px;
+        }
+
+        &-item {
+            outline: none;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+
+            &:hover {
+                
+                svg {
+                        
+                        path {
+                                fill: blue;
+                                transition-property: all;
+                                transition-duration: 0.5s;
+                                transition-delay: 0s;
+                                transition-timing-function: linear;
+                        }
+                }
+        }
+
+            &:focus {
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+
+        }
+    }
+}
+

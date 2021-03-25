@@ -1,0 +1,105 @@
+.c-direction {
+    display: flex;
+
+    &__svg {
+        background: #FFFFFF;
+        border: 1px solid #8EC2F2;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 12px 20px;
+        margin-right: 17px;
+        outline: none;
+
+        &:hover {
+            border: 1px solid #2091F9;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+
+                svg {
+                    
+                    path {
+                            fill: #2091F9;;
+                            transition-property: all;
+                            transition-duration: 0.5s;
+                            transition-delay: 0s;
+                            transition-timing-function: linear;
+                    }
+            }
+        }
+
+        &-next {
+            transform: rotate(180deg);
+            margin-left: 11px;
+            outline: none;
+
+            &:hover {
+                border: 1px solid #2091F9;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-delay: 0s;
+                transition-timing-function: linear;
+
+                    svg {
+                        
+                        path {
+                                fill: #2091F9;;
+                                transition-property: all;
+                                transition-duration: 0.5s;
+                                transition-delay: 0s;
+                                transition-timing-function: linear;
+                        }
+                }
+            }
+        }
+    }
+
+    &__number {
+        padding: 0 15px;
+        margin-right: 17px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        color: #8EC2F2;
+        background: #FFFFFF;
+        border: 1px solid #8EC2F2;
+        box-sizing: border-box;
+        border-radius: 5px;
+        outline: none;
+
+        &:hover {
+            background: #2091F9;
+            color: white;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+        }
+    }
+
+    &__ellipsis {
+        margin: auto;
+        padding-right: 3px;
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        color: #737373;
+
+        span {
+            color: #2091F9;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.c-breadcrumbs {
+    display: flex;
+    align-items: center;
+    padding: 26px 0px 24px 59px;
+    border: 1px solid #E8E8E8;
+
+    &__item {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #252B42;
+        outline: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: blue;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+        }
+    
+        &:focus {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }   
+    }
+
+    svg {
+        margin: 0px 13px;
+        flex-shrink: 0;
+    }
+
+    &__fashion {    
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+    
+}

@@ -1,0 +1,29 @@
+.c-favourites {    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;        
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        border: none;
+        outline: none;
+
+        &:hover {
+                
+                svg {
+                        
+                        path {
+                                fill: rgba(7, 74, 219, 0.726);
+                                transition-property: all;
+                                transition-duration: 0.5s;
+                                transition-delay: 0s;
+                                transition-timing-function: linear;
+                        }
+                }
+        }
+
+        &:focus {
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+}

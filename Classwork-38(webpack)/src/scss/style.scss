@@ -1,0 +1,44 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/media-queries";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "vendors/normalize";
+
+@import "base/fonts";
+@import "base/base";
+
+@import "components/button";
+@import "components/logo";
+@import "components/account";
+@import "components/favourites";
+@import "components/basket";
+@import "components/menu";
+@import "components/main-heading";
+@import "components/title";
+@import "components/products";
+@import "components/color";
+@import "components/tubs";
+@import "components/breadcrumbs";
+@import "components/dropdown";
+@import "components/radio";
+@import "components/filter";
+@import "components/brand";
+@import "components/direction";
+
+@import "pages/main/main";
+@import "pages/main/components/first-section";
+@import "pages/main/components/second-section";
+@import "pages/main/components/third-section";
+@import "pages/main/components/fourth-section";
+@import "pages/main/components/fifth-section";
+@import "pages/main/components/sixth-section";
+
+@import "pages/second/components/first-section";
+@import "pages/second/components/second-section";
+
+@import "pages/third/components/first-section";
+@import "pages/third/components/second-section";

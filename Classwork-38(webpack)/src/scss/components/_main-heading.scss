@@ -1,0 +1,40 @@
+.c-mh-suptitle {
+    @include heading ();
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;    
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.c-mh-title {
+    @include heading ();
+    margin: 8px 0px 8px 0px;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+
+    @media (max-width: 767px) {
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 47px;
+        
+    }
+}
+
+.c-mh-text {
+    @include heading ();
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+
+    @media (max-width: 767px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}

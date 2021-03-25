@@ -1,0 +1,41 @@
+.c-radio {
+    padding-bottom: 15px;
+    @include area-text;
+    width: 100%;
+
+    &:last-child {
+        padding-bottom: 0px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        
+        &-button {
+            width: 25px;
+            height: 25px;
+            border: 2px solid #DCDCDC;
+            border-radius: 50%;
+            outline: none;
+            margin-right: 15px;
+
+            &:hover {
+                background-color: white;
+                border: #2091F9 1px solid;
+                transition-property: all;
+                transition-duration: 0.2s;
+                transition-delay: 0s;
+                transition-timing-function: linear;
+            }
+
+            &:checked {
+                background-color: white;
+                border: #2091F9 5px solid;
+            }                            
+        }
+
+        &-number {
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.c-color {
+    display: flex;
+
+    &__type {
+        margin-right: 8px;
+        width: 30px;
+        height: 30px;
+        background: white;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        outline: none;
+
+        &:focus {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+        
+        &-blue {
+            background: #2091F9;
+        }
+
+        &-green {
+            background: #2DC071;
+        }
+
+        &-orange {
+            background: #E77C40;
+        }
+
+        &-dark-blue {
+            background: #252B42;
+        }
+    }
+}
